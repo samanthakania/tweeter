@@ -17,15 +17,73 @@ textarea {
   float: right;
     }
 
-new-tweet h2:after {
-  bottom: -10px;
-  content: "";
-  display: block;
-  height: 10px;
-  position: relative;
-  width: 100px;
-}
-
 .new-tweet h2 {
     border-bottom: 1px solid black;
 }
+
+.tweet-container {
+  margin-top: 3em;
+  margin-left: 2em;
+  margin-right: 2em;
+  background-color: white;
+  border: 1px solid #CFCFCF;
+  border-radius: 5px;
+  opacity: 0.7;
+}
+
+.tweet-container:hover {
+  opacity: 1;
+}
+
+.tweet-container header {
+  background-color: #E9E9E9;
+  padding: 0.5em 0 7em 0.5em;
+}
+
+.handle {
+  margin-top: 0px;
+  float: right;
+  padding-top: 10px;
+  padding-right: 5px;
+  color: #656565;
+}
+
+.iconOne {
+  float: left;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.name {
+  float: left;
+  padding-left: 10px;
+  padding-top: -10px;
+  color: #656565;
+  margin-top: 0px;
+}
+
+.tweet-container footer {
+  border-top: 1px solid #CFCFCF;
+  color: #656565;
+  padding: 10px;
+}
+
+.tweet-text {
+  color: #656565;
+  padding: 10px;
+}
+
+.time-stamp{
+  color: #656565;
+  display: inline-block;
+}
+
+.tweet-containter:hover footer-icons {
+  display: block;
+}
+
+.footer-icons {
+  float: right;
+  display: none;
+}
+
