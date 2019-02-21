@@ -5,6 +5,7 @@
   border: 1px solid #CFCFCF;
   border-radius: 5px;
   padding: 10px;
+  display: none;
 }
 
 textarea {
@@ -78,12 +79,29 @@ textarea {
   display: inline-block;
 }
 
-.tweet-containter:hover footer-icons {
-  display: block;
-}
-
 .footer-icons {
   float: right;
+}
+
+.alert {
+  padding: 20px;
+  background-color: #f44336; /* Red */
+  color: white;
+  margin-bottom: 15px;
   display: none;
 }
 
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}

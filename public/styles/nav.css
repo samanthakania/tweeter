@@ -19,3 +19,20 @@
   font-size: 40px;
   line-height: 80px;
 }
+
+#nav-bar .compose-button{
+  float: right;
+  margin-top: 10px;
+  height: 60px;
+  width: 100px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: #00a087;
+  font-size: 20px;
+}
+
+#nav-bar:hover .compose-button{
+  color: black;
+  background-color: #eee;
+}
