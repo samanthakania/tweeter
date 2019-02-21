@@ -18,13 +18,12 @@ body {
   margin: 0;
   background-color: #E9E9E9;
   font-family: 'Roboto Condensed', sans-serif;
-
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
-   main {
+  main {
   width: 40%;
   display: block;
   margin-left: auto;
