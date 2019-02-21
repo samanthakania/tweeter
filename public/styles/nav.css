@@ -30,6 +30,7 @@
   border-radius: 5px;
   color: #00a087;
   font-size: 20px;
+  line-height: 20px;
 }
 
 #nav-bar:hover .compose-button{

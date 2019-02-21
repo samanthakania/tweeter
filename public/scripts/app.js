@@ -47,16 +47,16 @@ $('#tweet-form').on('submit', function(event){
   event.preventDefault();
   console.log($(this).serialize());
 
-  $(".alert").slideUp("slow");
+  $(".alert").slideUp("fast");
 
   let tweetLength = $('#countingchar').val().length;
 
   if(tweetLength > 140){
     $(".alert").text("Tweet must be less than 140 characters.");
-    $(".alert").slideDown("slow");
+    $(".alert").slideDown("fast");
   } else if(tweetLength === 0){
     $(".alert").text("Please enter tweet.");
-    $(".alert").slideDown("slow");
+    $(".alert").slideDown("fast");
   } else {
      $.post( "/tweets", $(this).serialize())
      .done(function(data, status){

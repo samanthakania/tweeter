@@ -32,8 +32,17 @@ textarea {
   opacity: 0.7;
 }
 
+.footer-icons {
+  float: right;
+  visibility: hidden;
+}
+
 .tweet-container:hover {
   opacity: 1;
+}
+
+.tweet-container:hover .footer-icons {
+  visibility: visible;
 }
 
 .tweet-container header {
@@ -79,9 +88,7 @@ textarea {
   display: inline-block;
 }
 
-.footer-icons {
-  float: right;
-}
+
 
 .alert {
   padding: 20px;
