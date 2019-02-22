@@ -36,10 +36,21 @@ function createTweetElement(tweet) {
 
 
 function getTimeStamp(time){
-  const date = new Date();
-  const difference = date - time;
-  const daysElapsed = Math.round(difference / 24 / 60 / 60 / 1000);
-  return daysElapsed;
+  const date = new Date(time*1000);
+  var hours = date.getHours();
+  var minutes = "0" + date.getMinutes();
+  var seconds = "0" + date.getSeconds();
+  var formattedTime = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
+  return formattedTime;
+}
+
+function getTimeStamp(time){
+  var a = new Date(time*1000);
+  var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  var month = months[a.getMonth()];
+  var date = a.getDate();
+  var newTime = date + ' ' + month;
+  return newTime;
 }
 
 $('#tweet-form').on('submit', function(event){
